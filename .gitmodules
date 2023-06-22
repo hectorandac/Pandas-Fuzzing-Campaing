@@ -1,0 +1,3 @@
+[submodule "pandas"]
+	path = pandas
+	url = git@github.com-personal:pandas-dev/pandas.git

@@ -1,0 +1,2 @@
+pandas
+grpcio-tools

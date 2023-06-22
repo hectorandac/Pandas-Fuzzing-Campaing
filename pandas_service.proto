@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+service PandasService {
+    rpc RunMethod (MethodRequest) returns (MethodResponse) {}
+}
+
+message MethodRequest {
+    string input_json = 1;
+}
+
+message MethodResponse {
+    string result = 1;
+    string status = 2;  // "success" or "error"
+    string error_message = 3;  // Detailed error message if status is "error"
+}
